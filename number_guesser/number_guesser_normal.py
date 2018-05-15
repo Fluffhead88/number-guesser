@@ -7,21 +7,23 @@ import random
 
 computer_number = random.randint(1, 101)
 
-counter = 1
+guesses = 1
 
 for guess in range(5):
+    guesses = guesses + 1
     guess = input("Please guess a number between 1 and 100. > ")
-    if int(guess) == computer_number:
+    guess = int(guess)
+    if guess < computer_number:
+        print ("That's too low.")
+    if guess > computer_number:
+        print ("That's too high.")
+    if guess == computer_number:
         print ("That's correct!")
         break
-    else int(guess) > computer_number:
-        print ("That's too high.")
-    elif int(guess) < computer_number:
-        print ("That's too low.")
 
 
-counter = counter + 1
-print(counter)
+
+print(guesses)
 
 
 
