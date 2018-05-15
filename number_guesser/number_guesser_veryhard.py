@@ -2,18 +2,26 @@ my_number = 30
 
 import random
 
-computer_number = random.randint(0, 100)
+A = 0
+
+B = 100
+
+computer_number = random.randint(A, B)
 counter = 0
 
 
+
+
+
 for guess in range(5):
+
     counter = counter + 1
     if computer_number < my_number:
         print ("That's too low.")
-        computer_number_2 = random.randint(computer_number, 100)
+        computer_number = 
     if computer_number > my_number:
         print ("That's too high.")
-        computer_number_3 = random.randint(computer_number_2, computer_number)
+        computer_number < B
     if computer_number == my_number:
         print ("That's correct!")
         break
