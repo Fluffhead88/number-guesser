@@ -7,6 +7,8 @@ A = 0
 B = 100
 
 computer_number = random.randint(A, B)
+
+
 counter = 0
 
 
@@ -14,14 +16,15 @@ counter = 0
 
 
 for guess in range(5):
-
+    computer_number = random.randint(A, B)
     counter = counter + 1
     if computer_number < my_number:
         print ("That's too low.")
-        computer_number = 
+        A = computer_number
+        computer_number = random.randint(A, B)
     if computer_number > my_number:
         print ("That's too high.")
-        computer_number < B
+        B = computer_number
     if computer_number == my_number:
         print ("That's correct!")
         break
