@@ -7,7 +7,7 @@ import random
 
 computer_number = random.randint(1, 101)
 
-guesses = 1
+guesses = 0
 
 for guess in range(5):
     guesses = guesses + 1
