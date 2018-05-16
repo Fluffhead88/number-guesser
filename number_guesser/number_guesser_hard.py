@@ -7,7 +7,7 @@ counter = 0
 
 
 for guess in range(5):
-    guess = guess + 1
+    counter = counter + 1
     if computer_number < my_number:
         print ("That's too low.")
     if computer_number > my_number:
@@ -16,7 +16,7 @@ for guess in range(5):
         print ("That's correct!")
         break
     computer_number = random.randint(0, 100)
-    counter = counter + 1
+
 
 
 print(counter)

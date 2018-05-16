@@ -5,12 +5,12 @@ import random
 
 
 
-computer_number = random.randint(1, 101)
+computer_number = random.randint(0, 100)
 
-guesses = 0
+counter = 0
 
 for guess in range(5):
-    guesses = guesses + 1
+    counter = counter + 1
     guess = input("Please guess a number between 1 and 100. > ")
     guess = int(guess)
     if guess < computer_number:
@@ -23,15 +23,4 @@ for guess in range(5):
 
 
 
-print(guesses)
-
-
-
-
-
-#my_number = 30
-
-#import random
-
-#computer_number = random.randint(0, 100)
-#counter = 1
+print(counter)
