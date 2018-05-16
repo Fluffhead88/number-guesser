@@ -1,4 +1,4 @@
-# This is a draft of a game that shows you hot and cold
+# This is a game that shows you hot and cold
 # based on how close you are to a random number
 
 import random
